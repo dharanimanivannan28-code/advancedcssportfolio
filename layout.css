@@ -1,0 +1,84 @@
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:var(--primary);
+    color:white;
+}
+
+.nav{
+    display:flex;
+    gap:20px;
+}
+
+.nav__link{
+    text-decoration:none;
+    color:white;
+}
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero__content h1{
+    font-size:3rem;
+}
+
+.about{
+    padding:60px 10%;
+}
+
+.projects{
+    padding:60px 10%;
+}
+
+.projects__grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+}
+
+.project-card{
+    padding:20px;
+    border-radius:10px;
+    background:#f4f4f4;
+}
+
+.gallery{
+    padding:60px 10%;
+}
+
+.gallery__grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap:15px;
+}
+
+.footer{
+    padding:40px;
+    text-align:center;
+    background:var(--secondary);
+    color:white;
+}
+
+@media(max-width:768px){
+
+.nav{
+    flex-direction:column;
+}
+
+.hero__content h1{
+    font-size:2rem;
+}
+
+}
