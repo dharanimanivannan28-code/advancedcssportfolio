@@ -1,0 +1,48 @@
+.project-card{
+    transition:.4s;
+    animation:fadeUp .8s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+.gallery__grid img{
+    transition:.4s;
+}
+
+.gallery__grid img:hover{
+    transform:scale(1.05);
+}
+
+.nav__link::after{
+    content:"";
+    display:block;
+    width:0;
+    height:2px;
+    background:white;
+    transition:.3s;
+}
+
+.nav__link:hover::after{
+    width:100%;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+@keyframes fadeUp{
+
+from{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
